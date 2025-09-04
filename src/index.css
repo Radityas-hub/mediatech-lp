@@ -11,5 +11,16 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif";
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Partner Slider Animation */
+@keyframes infinite-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+  width: calc(200%);
 }
