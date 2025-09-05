@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Target/navigation icon -->
+  <rect width="32" height="32" rx="4" fill="#3B82F6"/>
+  <circle cx="16" cy="16" r="2" fill="#E91E63"/>
+  <path d="M16 8v4m0 8v4m-8-8h4m8 0h4" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+  <path d="M22 10l-6 6m0 0l-6 6m6-6l6 6m-6-6l-6-6" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+</svg>
