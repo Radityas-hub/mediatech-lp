@@ -10,25 +10,25 @@ export default function WhyChooseUsSection({
       id: "diversified-solutions",
       title: "Diversified Solutions",
       description: "Melayani sektor teknologi, properti, edukasi, dan F&B.",
-      icon: "/icons/diversified-solutions.svg", // Path ke gambar icon
+      icon: "/public/reason-icon (2).svg", // Path ke gambar icon
     },
     {
       id: "integrated-ecosystem",
       title: "Integrated Ecosystem",
       description: "Setiap lini bisnis saling bersinergi untuk pertumbuhan.",
-      icon: "/icons/integrated-ecosystem.svg", // Path ke gambar icon
+      icon: "/public/reason-icon (3).svg", // Path ke gambar icon
     },
     {
       id: "commitment-to-quality",
       title: "Commitment to Quality",
       description: "Fokus pada kualitas dari desain hingga implementasi.",
-      icon: "/icons/commitment-quality.svg", // Path ke gambar icon
+      icon: "/public/reason-icon (1).svg", // Path ke gambar icon
     },
     {
       id: "people-centric-approach",
       title: "People-Centric Approach",
       description: "Fokus pada kolaborasi dan pengguna.",
-      icon: "/icons/people-centric.svg", // Path ke gambar icon
+      icon: "/public/reason-icon (4).svg", // Path ke gambar icon
     },
   ];
 
@@ -65,9 +65,9 @@ export default function WhyChooseUsSection({
             {/* Client Stats */}
             <div className="flex items-center gap-4 mb-8 mt-3">
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white"></div>
                 <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
-                <div className="w-10 h-10 rounded-full bg-gray-500 border-2 border-white"></div>
+                <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
+                <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-[#006EFF]">600+</div>
@@ -94,7 +94,7 @@ export default function WhyChooseUsSection({
                 className="bg-gray-700 bg-opacity-90 backdrop-blur-sm rounded-2xl p-6 hover:bg-opacity-100 transition-all duration-300 border border-gray-600 border-opacity-30"
               >
                 {/* Icon Box */}
-                <div className="w-16 h-16 bg-blue-500 rounded-lg mb-6 flex items-center justify-center p-3">
+                <div className="w-20 h-20 rounded-lg mb-3 flex items-center justify-center border-2 border-transparent">
                   <img
                     src={feature.icon}
                     alt={`${feature.title} icon`}
@@ -108,7 +108,7 @@ export default function WhyChooseUsSection({
                   />
                 </div>
 
-                <h3 className="text-white text-xl font-bold mb-3">
+                <h3 className="text-white font-bold mb-2">
                   {feature.title}
                 </h3>
                 <p className="text-white opacity-80 text-sm leading-relaxed">
