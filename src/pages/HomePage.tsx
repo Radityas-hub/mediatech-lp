@@ -38,7 +38,7 @@ export default function HomePage() {
             <Button />
           </div>
           <div className="flex justify-end items-start">
-            <img src="/public/header-home.png" alt="" className="w-[80%]" />
+            <img src="https://github.com/Radityas-hub/mediatech-lp/blob/main/public/header-home.png?raw=true" alt="" className="w-[80%]" />
           </div>
         </div>
       </section>
