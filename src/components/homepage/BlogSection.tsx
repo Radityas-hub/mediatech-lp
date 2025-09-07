@@ -54,31 +54,31 @@ export default function BlogSection({ posts }: BlogSectionProps) {
   };
 
   return (
-    <section className="relative w-full py-20 bg-white">
-      <div className="w-full max-w-6xl mx-auto px-6">
+    <section className="relative w-full py-16 md:py-20 bg-white">
+      <div className="w-full max-w-6xl mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <h3 className="text-blue-600 tracking-widest text-sm font-medium mb-4">
             BLOGS
           </h3>
-          <h2 className="text-[#202020] text-4xl lg:text-5xl font-bold leading-tight mb-6">
+          <h2 className="text-[#202020] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
             Insights & Innovation
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
             Wawasan dan informasi seputar strategi digital, desain produk, hingga 
             pengembangan teknologi terbaru di berbagai sektor industri.
           </p>
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {blogPosts.map((post) => (
             <article 
               key={post.id}
               className="cursor-pointer"
             >
               {/* Blog Image */}
-              <div className="relative w-full h-64 lg:h-72 overflow-hidden mb-6 bg-gray-200">
+              <div className="relative w-full h-48 md:h-64 lg:h-72 overflow-hidden mb-4 md:mb-6 bg-gray-200 rounded-lg">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -101,8 +101,8 @@ export default function BlogSection({ posts }: BlogSectionProps) {
                 
                 {/* Category Badge */}
                 {post.category && (
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-white bg-opacity-90 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">
+                  <div className="absolute top-3 md:top-4 left-3 md:left-4">
+                    <span className="bg-white bg-opacity-90 text-gray-800 text-xs font-medium px-2 md:px-3 py-1 rounded-full">
                       {post.category}
                     </span>
                   </div>
@@ -110,12 +110,12 @@ export default function BlogSection({ posts }: BlogSectionProps) {
               </div>
 
               {/* Blog Content */}
-              <div className="space-y-3">
-                <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 leading-tight">
+              <div className="space-y-2 md:space-y-3">
+                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 leading-tight">
                   {truncateTitle(post.title)}
                 </h3>
                 
-                <p className="text-gray-600 text-sm lg:text-base leading-relaxed line-clamp-3">
+                <p className="text-gray-600 text-sm md:text-sm lg:text-base leading-relaxed line-clamp-3">
                   {post.excerpt}
                 </p>
 

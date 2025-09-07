@@ -1,7 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { label: "Home", href: "#home" },
@@ -12,9 +23,15 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full bg-transparent text-white z-10 absolute top-0 left-0">
-      <div className="max-w-6xl mx-auto px-8 lg:px-8 pt-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className={`w-full text-white z-50 transition-all duration-300 ${
+      isScrolled ? 'fixed top-0 left-0 bg-[#081425]' : 'absolute top-0 left-0 bg-transparent'
+    } ${
+      isMobileMenuOpen ? 'md:bg-transparent bg-[#081425]' : ''
+    }`}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-8">
+        <div className={`flex items-center justify-between transition-all duration-300 ${
+          isScrolled ? 'h-18 py-4' : 'h-16 pt-4'
+        }`}>
           {/* Logo */}
           <div className="flex items-center">
             <img
@@ -83,7 +100,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pt-4 pb-6">
+          <div className="md:hidden pt-4 pb-6 bg-[#081425]">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a

@@ -60,21 +60,21 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="relative w-full py-20 bg-gray-50">
-      <div className="w-full max-w-6xl mx-auto px-6">
+    <section className="relative w-full py-16 md:py-20 bg-gray-50">
+      <div className="w-full max-w-6xl mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="mb-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="lg:w-1/2">
+        <div className="mb-8 md:mb-12">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8">
+            <div className="lg:w-1/2 text-center lg:text-left">
               <h3 className="text-blue-600 tracking-widest text-sm font-medium mb-4">
                 TESTIMONIALS
               </h3>
-              <h2 className="text-[#202020] text-4xl lg:text-5xl font-bold leading-tight">
+              <h2 className="text-[#202020] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 What Our Clients Say
               </h2>
             </div>
             <div className="lg:w-1/2 lg:pl-12">
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed text-center lg:text-left">
                 Kami dipercaya oleh banyak klien dari berbagai industri. Berikut kesan mereka terhadap layanan dan kolaborasi bersama Mediatech.
               </p>
             </div>
@@ -82,15 +82,15 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Layout - Masonry Style */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-0">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 md:gap-6 space-y-0">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="break-inside-avoid mb-6">
-              <div className="rounded-2xl flex flex-col gap-4">
-                <p className="text-gray-800 leading-relaxed italic border-gray-200 border rounded-2xl p-6">
+            <div key={testimonial.id} className="break-inside-avoid mb-4 md:mb-6">
+              <div className="rounded-2xl flex flex-col gap-3 md:gap-4">
+                <p className="text-gray-800 leading-relaxed italic border-gray-200 border rounded-2xl p-4 md:p-6 text-sm md:text-base">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center gap-3 px-2">
-                  <div className="w-12 h-12 rounded-full bg-[#d9d9d9] flex items-center justify-center overflow-hidden flex-shrink-0">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#d9d9d9] flex items-center justify-center overflow-hidden flex-shrink-0">
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
@@ -106,7 +106,7 @@ export default function TestimonialsSection() {
                     />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 text-sm">
+                    <h4 className="font-semibold text-gray-900 text-xs md:text-sm">
                       {testimonial.name}
                     </h4>
                     <p className="text-gray-600 text-xs">
