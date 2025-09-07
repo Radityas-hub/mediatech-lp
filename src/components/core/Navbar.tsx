@@ -39,7 +39,7 @@ export default function Navbar() {
 
           {/* Contact Us Button */}
           <div className="hidden md:flex items-center">
-            <button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-6 py-2.5 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200">
+            <button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-6 py-2.5 rounded font-medium flex items-center gap-2 transition-colors duration-200">
               Contact Us
               <img
                 src="/arrow-icon.webp"

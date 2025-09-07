@@ -35,7 +35,7 @@ export default function HomePage() {
               Solusi digital terintegrasi untuk mendukung transformasi dan
               pertumbuhan bisnis Anda di era teknologi.
             </p>
-            <Button />
+            <Button>Get in touch</Button>
           </div>
           <div className="flex justify-end items-start">
             <img src="https://github.com/Radityas-hub/mediatech-lp/blob/main/public/header-home.png?raw=true" alt="" className="w-[80%]" />

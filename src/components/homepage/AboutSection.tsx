@@ -25,9 +25,9 @@ export default function AboutSection() {
         </div>
 
         {/* Main Image with Play Button */}
-        <div className="relative mt-8 w-full rounded-2xl overflow-hidden shadow-lg bg-[#d9d9d9]">
+        <div className="relative mt-8 w-[90%] rounded-2xl overflow-hidden shadow-lg bg-[#d9d9d9]">
           <img
-            src="/about-main.jpg"
+            src="/video-placeholder.png"
             alt="Video about Mediatech"
             className="w-full h-[400px] object-cover brightness-75"
           />
@@ -44,7 +44,7 @@ export default function AboutSection() {
                 // fill="#2563eb"
                 fillOpacity="0.15"
               />
-              <polygon points="20,16 34,24 20,32" fill="#d9d9d9" />
+              <polygon points="20,16 34,24 20,32" fill="#101010" />
             </svg>
           </button>
         </div>

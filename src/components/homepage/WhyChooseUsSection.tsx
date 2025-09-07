@@ -1,3 +1,5 @@
+import Button from "@/components/core/button";
+
 interface WhyChooseUsSectionProps {
   backgroundImage?: string;
 }
@@ -65,9 +67,9 @@ export default function WhyChooseUsSection({
             {/* Client Stats */}
             <div className="flex items-center gap-4 mb-8 mt-3">
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
-                <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
-                <div className="w-10 h-10 rounded-full bg-gray-400 border-2 border-white"></div>
+                <div className="w-10 h-10 rounded-full bg-cover bg-center" style={{ backgroundImage: "url('/person.png')" }}></div>
+                <div className="w-10 h-10 rounded-full bg-cover bg-center" style={{ backgroundImage: "url('/person.png')" }}></div>
+                <div className="w-10 h-10 rounded-full bg-cover bg-center" style={{ backgroundImage: "url('/person.png')" }}></div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-[#006EFF]">600+</div>
@@ -76,14 +78,7 @@ export default function WhyChooseUsSection({
             </div>
 
             {/* CTA Button */}
-            <button className="bg-blue-600 w-fit hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center gap-2">
-              Get in touch
-              <img
-                src="/arrow-icon.webp"
-                alt="Arrow"
-                className="w-4 h-4"
-              />
-            </button>
+            <Button>Get in touch</Button>
           </div>
 
           {/* Right Content - Feature Cards */}

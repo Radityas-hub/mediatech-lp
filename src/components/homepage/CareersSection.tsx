@@ -1,3 +1,5 @@
+import Button from "@/components/core/button";
+
 interface CareersSectionProps {
   backgroundImage?: string;
 }
@@ -128,14 +130,7 @@ export default function CareersSection({
           </p>
 
           {/* CTA Button */}
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
-            Peluang Karir
-            <img
-              src="/arrow-icon.webp"
-              alt="Arrow"
-              className="w-4 h-4"
-            />
-          </button>
+          <Button>Peluang Karir</Button>
         </div>
 
       </div>
