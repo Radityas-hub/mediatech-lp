@@ -35,14 +35,14 @@ export default function DigitalIdeaSection() {
           </p>
         </div>
 
-          <div className="flex justify-between w-full items-start md:gap-12 flex-col md:flex-row ">
+          <div className="flex justify-between w-full items-start flex-col md:flex-row ">
           {/* Main Title */}
           <h2 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight font-bold max-w-[680px]">
             Have a Digital Idea? Let's Build Together
           </h2>
 
           {/* CTA Button */}
-            <button className="bg-white hover:bg-gray-100 text-blue-600 h-fit px-8 py-3 text-lg font-medium rounded transition-colors duration-300 flex items-center w-fit gap-2">
+            <button className="bg-white w-[180px] mt-8 md:mt-0 lg:mt-0 hover:bg-gray-100 text-blue-600 h-fit justify-center align-center py-3 text-lg font-medium rounded transition-colors duration-300 flex items-center gap-2">
               Get in touch
               <img
                 src="/arrow-icon-blue.webp"

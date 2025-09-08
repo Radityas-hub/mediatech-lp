@@ -27,7 +27,7 @@ export default function HomePage() {
         <div className="w-full min-h-[80vh] max-w-6xl px-4 md:px-6 flex justify-center items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
             {/* Left Content */}
-            <div className="flex flex-col justify-center items-start gap-4 text-left">
+            <div className="flex flex-col justify-center items-start md:items-center lg:items-start gap-4 text-left md:text-center lg:text-left">
               <p className="italic opacity-60 text-white text-sm md:text-base">
                 Indonesian Digital Company
               </p>
@@ -38,7 +38,7 @@ export default function HomePage() {
                 Solusi digital terintegrasi untuk mendukung transformasi dan
                 pertumbuhan bisnis Anda di era teknologi.
               </p>
-              <div className="mt-4">
+              <div className="mt-4 w-full flex justify-start md:justify-center lg:justify-start md:mb-8">
                 <Button>Get in touch</Button>
               </div>
             </div>
