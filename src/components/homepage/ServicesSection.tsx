@@ -43,7 +43,7 @@ export default function ServicesSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 flex justify-start lg:justify-end items-end">
-              <p className="text-sm md:text-base opacity-80 leading-relaxed text-left lg:text-right max-w-lg lg:max-w-[540px]">
+              <p className="text-sm md:text-base opacity-80 leading-relaxed text-left lg:text-right lg:max-w-[540px] lg:pl-[100px]">
                 Kami menyediakan layanan berbasis teknologi, mulai dari UI/UX,
                 software development, hingga cloud-based solutions — semuanya
                 dirancang untuk pertumbuhan yang berkelanjutan dan efisien.
@@ -54,7 +54,7 @@ export default function ServicesSection() {
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 auto-rows-fr lg:h-[600px]">
             {/* Koding Akademi - Top Left */}
-            <div className="lg:col-span-6 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300 hover:scale-[1.02] min-h-[250px] md:min-h-[300px]">
+            <div className="lg:col-span-6 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300  min-h-[250px] md:min-h-[300px]">
               {/* Background placeholder */}
               <div className="absolute inset-0 bg-[#d9d9d9]"></div>
 
@@ -78,7 +78,7 @@ export default function ServicesSection() {
             </div>
 
             {/* Virtual Office - Top Right */}
-            <div className="lg:col-span-6 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300 hover:scale-[1.02] min-h-[250px] md:min-h-[300px]">
+            <div className="lg:col-span-6 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300  min-h-[250px] md:min-h-[300px]">
               {/* Background placeholder */}
               <div className="absolute inset-0 bg-[#d9d9d9]"></div>
 
@@ -102,7 +102,7 @@ export default function ServicesSection() {
             </div>
 
             {/* FNB Bali - Bottom Left (Smaller) */}
-            <div className="lg:col-span-4 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300 hover:scale-[1.02] min-h-[250px] md:min-h-[300px]">
+            <div className="lg:col-span-4 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300  min-h-[250px] md:min-h-[300px] mt-2">
               {/* Background placeholder */}
               <div className="absolute inset-0 bg-[#d9d9d9]"></div>
 
@@ -126,7 +126,7 @@ export default function ServicesSection() {
             </div>
 
             {/* Software House - Bottom Right (Larger) */}
-            <div className="lg:col-span-8 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300 hover:scale-[1.02] min-h-[250px] md:min-h-[300px]">
+            <div className="lg:col-span-8 lg:row-span-1 relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer transition-transform duration-300  min-h-[250px] md:min-h-[300px] mt-2">
               {/* Background placeholder */}
               <div className="absolute inset-0 bg-[#d9d9d9]"></div>
 

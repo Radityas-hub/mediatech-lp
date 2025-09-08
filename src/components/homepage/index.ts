@@ -6,3 +6,4 @@ export { default as TestimonialsSection } from './TestimonialsSection';
 export { default as PartnershipSection } from './PartnershipSection';
 export { default as BlogSection } from './BlogSection';
 export { default as CareersSection } from './CareersSection';
+export { default as DigitalIdeaSection } from './DigitalIdeaSection';

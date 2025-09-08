@@ -10,6 +10,7 @@ import {
   PartnershipSection,
   BlogSection,
   CareersSection,
+  DigitalIdeaSection,
 } from "@/components/homepage";
 
 export default function HomePage() {
@@ -77,6 +78,9 @@ export default function HomePage() {
 
       {/* ==== careers section ===== */}
       <CareersSection />
+
+      {/* ==== digital idea section ===== */}
+      <DigitalIdeaSection />
 
       {/* ==== footer section ===== */}
       <Footer />
